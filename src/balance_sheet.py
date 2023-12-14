@@ -53,7 +53,8 @@ def metrics(data, total_revenue):
     totalCurrentLiabilities = safe_float(data.get("totalCurrentLiabilities"))
     totalLiabilities = safe_float(data.get("totalLiabilities"))
     totalShareholderEquity = safe_float(data.get("totalShareholderEquity"))
-    totalAssets = safe_float(data.get("totalAssets"))
+    # totalAssets = safe_float(data.get("totalAssets"))
+    toalAssets = safe_float(data.get("totalAssets"))
     inventory = safe_float(data.get("inventory"))
 
     # Calculate metrics, but check for N/A values in operands
