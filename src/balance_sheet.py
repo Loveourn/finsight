@@ -23,6 +23,7 @@ logger = logging.getLogger(__name__)
 OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY")
 
 def charts(data):
+    # report = data['annualReports'][0]
     report = data['annualReports'][0]
     asset_composition = {"total_current_assets": report['totalCurrentAssets'],
         "total_non_current_assets": report['totalNonCurrentAssets']              
